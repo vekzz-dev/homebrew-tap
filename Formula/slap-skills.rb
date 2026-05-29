@@ -5,21 +5,21 @@
 class SlapSkills < Formula
   desc "CLI to manage your opencode skills from any git repo"
   homepage "https://github.com/vekzz-dev/slap-skills"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.2/slap-skills_Darwin_x86_64.tar.gz"
-      sha256 "7dba4e3f8f316757689fab4befd5dcb0ce017ff6202c07d785fe1a79199054d8"
+      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.3/slap-skills_Darwin_x86_64.tar.gz"
+      sha256 "211a8e24cb2edb77d34ff1ea9f99a362da18a9774a2350e418f7265414c3513e"
 
       define_method(:install) do
         bin.install "slap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.2/slap-skills_Darwin_aarch64.tar.gz"
-      sha256 "01477aa8ea74a39a84b69d36ec96b48486be136570bf31cd5d96d5ef431d7282"
+      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.3/slap-skills_Darwin_aarch64.tar.gz"
+      sha256 "3cc80c2038318b815e6db004bf1432fe04a7089d39547f77cebab9d8185e4f63"
 
       define_method(:install) do
         bin.install "slap"
@@ -29,15 +29,15 @@ class SlapSkills < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.2/slap-skills_Linux_x86_64.tar.gz"
-      sha256 "c9887f2a6612dcca00072ac0060004c3b43fc122a176eb39f761feb2f08df6b5"
+      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.3/slap-skills_Linux_x86_64.tar.gz"
+      sha256 "d2ab8851c02ffecab42130ac14f01572ce6ec896c9072781c4c4cd12d4c471cd"
       define_method(:install) do
         bin.install "slap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.2/slap-skills_Linux_aarch64.tar.gz"
-      sha256 "50e80543aec5dcf8efac138efe515b30fb30fe3a82b227e877c544e1e32ac64b"
+      url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.2.3/slap-skills_Linux_aarch64.tar.gz"
+      sha256 "91b4036e1ccb3741d0b4902eca8f748f8baf9624dbf8ad4773016ffac2e26fa1"
       define_method(:install) do
         bin.install "slap"
       end
