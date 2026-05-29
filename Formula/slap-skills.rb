@@ -11,7 +11,7 @@ class SlapSkills < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.1.0/slap-skills_Darwin_x86_64.tar.gz"
-      sha256 "eac27ddb0f06ed1d569838b4daddd94828c2d76742ead4ae1babff97cf8f3b67"
+      sha256 "3e56fa040234514e6bb46235e2e853898c6c7442f2d3dd91891d8cf7f54f8760"
 
       define_method(:install) do
         bin.install "slap"
@@ -19,7 +19,7 @@ class SlapSkills < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.1.0/slap-skills_Darwin_aarch64.tar.gz"
-      sha256 "0153f11e174d0b83fdb637e4da1d67a5f6e166892e52e06ef277304581d43b6b"
+      sha256 "4f983e0b15e86420cb0525ee8cc024628b7e7d8d145c52e5de90ffcb2020b6f5"
 
       define_method(:install) do
         bin.install "slap"
@@ -30,14 +30,14 @@ class SlapSkills < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.1.0/slap-skills_Linux_x86_64.tar.gz"
-      sha256 "bee91ee078c67bc41bf305ab5a50f5f12473cc70338cece4307b6a24f3b8f4fe"
+      sha256 "4cc03d7d67a4a9c4ea558ed4375132b580e729354a14915517f7e44e985b3a9a"
       define_method(:install) do
         bin.install "slap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vekzz-dev/slap-skills/releases/download/v0.1.0/slap-skills_Linux_aarch64.tar.gz"
-      sha256 "379c715ba85575b83beca643971f9da6692fb91dbbc089ac0b5c8ae715b2ad62"
+      sha256 "b4aa37b37355455efa6c4360bb898d0c641df30c50d132d09e3e0cbdaa2fe515"
       define_method(:install) do
         bin.install "slap"
       end
